@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     "accounts",
     # } PREP
 
-    # STUD! {    
+    # STUD! {
+    "product_types",
     # } STUD!
 
     # PREP {
