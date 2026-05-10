@@ -1,0 +1,8 @@
+# PREP {
+STUDENT_FULL_NAME_RUS = "Граблевский Михаил Владимирович"
+PROJECT_NAME_RUS = "Мастер пол"
+PROJECT_DESCRIPTION =  "Напольные покрытия"
+MAIN_BACKGROUND_COLOR = "#FFFFFF"
+AUX_BACKGROUND_COLOR = "#F4E8D3"
+ATTENTION_COLOR = "#67BA80"
+# } PREP
