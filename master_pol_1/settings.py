@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "partners",
     "products",
     "material_types",
+    "partner_products",
     # } STUD!
 
     # PREP {
