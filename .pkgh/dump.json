@@ -526,7 +526,7 @@
         "phone_number": 74931234567,
         "address": "652050, Кемеровская область, город Юрга, ул. Лесная, 15",
         "taxpayer_number": 2222455179,
-        "rating": 7
+        "rating": 8
     }
 },
 {
@@ -583,6 +583,20 @@
         "address": "309500, Белгородская область, город Старый Оскол, ул. Рабочая, 122",
         "taxpayer_number": 5552431140,
         "rating": 10
+    }
+},
+{
+    "model": "partners.partner",
+    "pk": 6,
+    "fields": {
+        "type": "ЗАО",
+        "name": "dddd",
+        "ceo": "dddd",
+        "email": "d@mail.ru",
+        "phone_number": 222222222222222222,
+        "address": "ddd",
+        "taxpayer_number": 333333333,
+        "rating": 2
     }
 },
 {
@@ -673,6 +687,166 @@
     "fields": {
         "material_type_name": "Тип материала 5",
         "deficiency_percentage": "0.34"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "partner": 1,
+        "amount": 15500,
+        "sale_date": "2023-03-23"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 2,
+    "fields": {
+        "product": 3,
+        "partner": 1,
+        "amount": 12350,
+        "sale_date": "2023-12-18"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 3,
+    "fields": {
+        "product": 4,
+        "partner": 1,
+        "amount": 37400,
+        "sale_date": "2024-06-07"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 4,
+    "fields": {
+        "product": 2,
+        "partner": 2,
+        "amount": 35000,
+        "sale_date": "2022-12-02"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 5,
+    "fields": {
+        "product": 5,
+        "partner": 2,
+        "amount": 1250,
+        "sale_date": "2023-05-17"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 6,
+    "fields": {
+        "product": 3,
+        "partner": 2,
+        "amount": 1000,
+        "sale_date": "2024-06-07"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 7,
+    "fields": {
+        "product": 1,
+        "partner": 2,
+        "amount": 7550,
+        "sale_date": "2024-07-01"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 8,
+    "fields": {
+        "product": 1,
+        "partner": 3,
+        "amount": 7250,
+        "sale_date": "2023-01-22"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 9,
+    "fields": {
+        "product": 2,
+        "partner": 3,
+        "amount": 2500,
+        "sale_date": "2024-07-05"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 10,
+    "fields": {
+        "product": 4,
+        "partner": 4,
+        "amount": 59050,
+        "sale_date": "2023-03-20"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 11,
+    "fields": {
+        "product": 3,
+        "partner": 4,
+        "amount": 37200,
+        "sale_date": "2024-03-12"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 12,
+    "fields": {
+        "product": 5,
+        "partner": 4,
+        "amount": 4500,
+        "sale_date": "2024-05-14"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 13,
+    "fields": {
+        "product": 3,
+        "partner": 5,
+        "amount": 50000,
+        "sale_date": "2023-09-19"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 14,
+    "fields": {
+        "product": 4,
+        "partner": 5,
+        "amount": 670000,
+        "sale_date": "2023-11-10"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 15,
+    "fields": {
+        "product": 1,
+        "partner": 5,
+        "amount": 35000,
+        "sale_date": "2024-04-15"
+    }
+},
+{
+    "model": "partner_products.partnerproduct",
+    "pk": 16,
+    "fields": {
+        "product": 2,
+        "partner": 5,
+        "amount": 25000,
+        "sale_date": "2024-06-12"
     }
 }
 ]
