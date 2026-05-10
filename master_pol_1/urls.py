@@ -23,6 +23,7 @@ from django.urls import path, include
 from django.conf import settings  # PREP
 from django.conf.urls.static import static  # PREP
 
+from general.views import CalculateMaterialView
 from home.views import HomeView
 from partner_products.views import SaleHistoryView
 from partners.views import PartnerCreateView, PartnerUpdateView
@@ -36,6 +37,7 @@ urlpatterns = [
     path("partner/create", PartnerCreateView.as_view(), name="partner_create"),
     path("partner/<int:pk>/update", PartnerUpdateView.as_view(), name="partner_update"),
     path("partner/<int:pk>/sales", SaleHistoryView.as_view(), name="sales"),
+    path("calculate", CalculateMaterialView.as_view(), name="calculate"),
 ]
 
 urlpatterns += i18n_patterns(

@@ -12,6 +12,7 @@
 
 {% block content %}
 <a class="btn attention" href="{% url 'partner_create' %}">Добавить партнера</a>
+<a class="btn attention" href="{% url 'calculate' %}">Расчет материала</a>
 {% for object in object_list %}
     {% include 'objects/main.html' %}
 {% endfor %}

@@ -1,0 +1,26 @@
+{% extends 'general/base.html' %}
+{% load static %}
+
+{% block title %}
+    Тестирование метода рассчта количество материала
+{% endblock %}
+
+{% block h %}
+    Тестирование метода рассчта количество материала
+{% endblock %}
+
+{% block content %}
+<a class="btn attention mb-3" href="{% url 'home' %}">Назад</a>
+
+    <p>
+        material_calculator.calculate_material(product_type_id=1,
+                                               mateirial_type_id=1,
+                                               produced_product_amount=1,
+                                               param_1=1,
+                                               param_2=1) = {{ amount }}
+    </p>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}
