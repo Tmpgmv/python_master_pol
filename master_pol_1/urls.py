@@ -24,6 +24,7 @@ from django.conf import settings  # PREP
 from django.conf.urls.static import static  # PREP
 
 from home.views import HomeView
+from partners.views import PartnerCreateView
 
 urlpatterns = [
     path("accounts/", include("django.contrib.auth.urls")),
@@ -31,6 +32,7 @@ urlpatterns = [
     path("", HomeView.as_view(), name="home"),
     
     path("admin/", admin.site.urls),
+    path("partner/create", PartnerCreateView.as_view(), name="partner_create"),
 ]
 
 urlpatterns += i18n_patterns(
