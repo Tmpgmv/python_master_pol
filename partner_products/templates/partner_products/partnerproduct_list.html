@@ -1,0 +1,22 @@
+{% extends 'general/base.html' %}
+{% load static %}
+
+{% block title %}
+    История реализации продукции партрером: {{ object_list.first.partner }}
+{% endblock %}
+
+{% block h %}
+    История реализации продукции партрером: {{ object_list.first.partner }}
+{% endblock %}
+
+{% block content %}
+<a class="btn attention mb-3" href="{% url 'home' %}">Назад</a>
+
+{% for object in object_list %}
+    {% include 'objects/one_column.html' %}
+{% endfor %}
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}
