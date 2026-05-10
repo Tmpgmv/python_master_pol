@@ -46,6 +46,10 @@ class Partner(models.Model):
     def get_update_url(self):
         return reverse("partner_update", kwargs={"pk": self.pk  })
 
+
+    def get_sales_url(self):
+        return reverse("sales", kwargs={"pk": self.pk})
+
     def __str__(self):
         return self.name
 
