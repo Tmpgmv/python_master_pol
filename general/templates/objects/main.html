@@ -40,7 +40,7 @@ https://getbootstrap.com/docs/5.3/utilities/spacing/#gap
             {% comment %}<a class="btn del-button position-absolute z-3" href="{{ object.get_delete_url }}">{% bs_icon 'trash' %}</a>{% endcomment %}
         {% endif %}
     </div>
-    {% if user.is_superuser %}
-        <a href="{# PREP {{ object.get_update_url }} #}" class="stretched-link"></a>
-    {% endif %}
+
+    <a href="{{ object.get_update_url }}" class="stretched-link"></a>
+
 </div>
