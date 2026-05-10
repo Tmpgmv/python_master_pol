@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from partner_products.models import PartnerProduct
+
+admin.site.register(PartnerProduct)
