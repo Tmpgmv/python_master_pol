@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Partner(models.Model):
@@ -41,6 +42,9 @@ class Partner(models.Model):
             discount = 15
 
         return f"{discount} %"
+
+    def get_update_url(self):
+        return reverse("partner_update", kwargs={"pk": self.pk  })
 
     def __str__(self):
         return self.name
