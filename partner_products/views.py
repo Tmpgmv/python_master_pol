@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from partner_products.models import PartnerProduct
+
+
+class SaleHistoryView(ListView):
+    model = PartnerProduct
