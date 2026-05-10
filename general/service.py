@@ -1,6 +1,8 @@
 import math
 
 from general.exceptions import InvalidParamsException
+from material_types.models import MaterialType
+from product_types.models import ProductType
 
 
 class MaterialCalculator():
@@ -26,8 +28,14 @@ class MaterialCalculator():
             self.validate_params(produced_product_amount,
                                  param_1,
                                  param_2)
+            product_type_coefficient = ProductType.objects.get(pk=product_type_id).coefficient
+            deficiency_percentage = MaterialType.objects.get(pk=mateirial_type_id).deficiency_percentage
 
-        except (InvalidParamsException) as e:
+            material_amount = param_1 * param_2 * product_type_coefficient
+            defective_material = material_amount * deficiency_percentage / 100
+            material_amount += defective_material
+
+        except (InvalidParamsException, ProductType.DoesNotExist) as e:
             print(e)
             return -1
 
